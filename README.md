@@ -77,7 +77,6 @@ either by deleting the resource group in the Portal or running `azd down`.
    ```shell
    azd auth login --use-device-code
    '''
-
 ### Deploying
 
 Follow these steps to provision Azure resources and deploy the application code:
@@ -96,6 +95,10 @@ Follow these steps to provision Azure resources and deploy the application code:
 
     Enter a name that will be used for the resource group.
     This will create a new folder in the `.azure` folder, and set it as the active environment for any calls to `azd` going forward.
+   
+   '''shell
+   azd provision
+   '''
 
 1. Run `azd up` - This will provision Azure resources and deploy this sample to those resources, including building the search index based on the files found in the `./data` folder.
     * **Important**: Beware that the resources created by this command will incur immediate costs, primarily from the AI Search resource. These resources may accrue costs even if you interrupt the command before it is fully executed. You can run `azd down` or delete the resources manually to avoid unnecessary spending.
