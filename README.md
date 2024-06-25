@@ -68,7 +68,7 @@ either by deleting the resource group in the Portal or running `azd down`.
 3. Run this command to download the project code:
 
     ```shell
-    azd init -t nmh-documents-RAG
+    azd init -t https://github.com/Shashank8343/nmh-documents-RAG
     ```
 
     Note that this command will initialize a git repository, so you do not need to clone this repository.
