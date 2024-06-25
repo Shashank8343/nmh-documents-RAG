@@ -72,6 +72,11 @@ either by deleting the resource group in the Portal or running `azd down`.
     ```
 
     Note that this command will initialize a git repository, so you do not need to clone this repository.
+4. Open the Terminal of the folder and login with azure cli
+5. 
+   ```shell
+   azd auth login --use-device-code
+   '''
 
 ### Deploying
 
