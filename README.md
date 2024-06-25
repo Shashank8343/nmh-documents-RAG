@@ -124,7 +124,7 @@ To give someone else access to a completely deployed and existing environment,
 either you or they can follow these steps:
 
 1. Install the [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli)
-1. Run `azd init -t nmh-documents-RAG` or clone this repository.
+1. Run `azd init -t https://github.com/Shashank8343/nmh-documents-RAG` or clone this repository.
 1. Run `azd env refresh -e {environment name}`
    They will need the azd environment name, subscription ID, and location to run this command. You can find those values in your `.azure/{env name}/.env` file.  This will populate their azd environment's `.env` file with all the settings needed to run the app locally.
 1. Set the environment variable `AZURE_PRINCIPAL_ID` either in that `.env` file or in the active shell to their Azure ID, which they can get with `az ad signed-in-user show`.
