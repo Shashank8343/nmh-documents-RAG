@@ -98,7 +98,7 @@ Follow these steps to provision Azure resources and deploy the application code:
 1. After the application has been successfully deployed you will see a URL printed to the console.  Click that URL to interact with the application in your browser.
 It will look like the following:
 
-!['Output from running azd up'](docs/images/endpoint.png)
+!['Output from running azd up']
 
 > NOTE: It may take 5-10 minutes after you see 'SUCCESS' for the application to be fully deployed. If you see a "Python Developer" welcome screen or an error page, then wait a bit and refresh the page. See [guide on debugging App Service deployments](docs/appservice.md).
 
